@@ -14,7 +14,7 @@ export default function TimerChallenge({
     function handleStart() {
         timer.current = setTimeout(() => {
             setTimerExpired(true);
-            modal.current.showModal();
+            modal.current.open();
         }, targetTime * 1000);
 
         setTimerStarted(true);
